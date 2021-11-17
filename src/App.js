@@ -1,14 +1,16 @@
 
 import './App.css';
+import React from "react"
+import Item from "./Todoitems.js"
 
-function App() {
+export default function App() {
   
   return(
-    <div>
-   <input type="placeholder">
-   <input type="text">
-     </div>
-
-  )
-
-export default App;
+  <div className="todo-list">
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+  </div>
+)
+  }
