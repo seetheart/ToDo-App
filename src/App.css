@@ -82,9 +82,23 @@ input[type=checkbox]
 .contact-care
 {
   float:left;
-  padding:10px;
+  margin:10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  
+
 }
+.contact-care.h3
+{
+  text-align: center;
+
+}
+.contact-care.p
+{
+  text-align: center;
+}
+
 .contacts
 {
-  border-radius: 10px 10px 10px 10px;
+ 
 }
