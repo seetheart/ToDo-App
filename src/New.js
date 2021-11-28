@@ -1,16 +1,24 @@
-import React from "react";
-import "./App.css"
-import ContactCards from "./ContactCards"
-import Cats from "./Cats"
+import React from "react"
 
-export default function New()
-{
-const products= Cats.map(item => <ContactCards Key={item.id} contact={item}/>)
+export default class New extends React.Component{
+    constructor()
+    {
+        super()
+        this.state={
+            answer:"yes"
+        }
+    }
+   
+ 
+    render(){
+        
+        
+        return(
+            <div>
+                
+                <h1> somethng {this.state.answer}</h1>
+            </div>
+        )
+    }
 
-return(
-    <div>
-        {products}
-    </div>
-
-)
 }

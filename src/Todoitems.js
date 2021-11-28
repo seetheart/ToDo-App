@@ -1,11 +1,11 @@
 import React from "react"
 
-export default function Item()
+export default function Item(props)
 {
 return(
     <div className="todo-item">
-    <input type="checkbox"/>
-    <p> placehoder text here</p>
+    <input type="checkbox" checked={props.listitem.completed}/>
+    <p> {props.listitem.text}</p>
     </div>
 )
 
